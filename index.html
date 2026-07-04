@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>La Costeña × ARDE · Teaser Relanzamiento Frijoles</title>
+<meta name="description" content="Propuesta confidencial · Teaser de expectativa para el relanzamiento de la categoría de frijoles de La Costeña. ARDE · Human-Directed AI Creative Studio." />
+<!-- Vista previa al compartir el link (Open Graph) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARDE · Multidisciplinary Studio">
+<meta property="og:title" content="La Costeña × ARDE · Teaser Relanzamiento Frijoles">
+<meta property="og:description" content="Algo grande está por llegar a la categoría de frijoles. Propuesta confidencial de producción · revelación Octubre 2026.">
+<meta property="og:image" content="poster.jpg">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo_lacostena.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --void:#120D0B;
+    --void-2:#1A130F;
+    --wine:#4A1C1C;
+    --wine-deep:#2A1010;
+    --red:#D51023;
+    --red-bright:#F01A2C;
+    --gold:#FFD200;
+    --ember:#F58220;
+    --lc-wine:#5A2823;
+    --bone:#F3EBDD;
+    --bone-dim:#B3A390;
+    --line:rgba(243,235,221,.14);
+    --line-soft:rgba(243,235,221,.08);
+    --maxw:1220px;
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    background:var(--void);
+    color:var(--bone);
+    font-family:'Archivo',system-ui,sans-serif;
+    font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--red);color:#fff}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.04;letter-spacing:-.015em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+  .mono{font-family:'Space Mono',monospace}
+  .accent{color:var(--red-bright)}
+  .gold{color:var(--gold)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+  /* ---------- grano de película ---------- */
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:2000;opacity:.055;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.8'/%3E%3C/svg%3E");
+  }
+
+  /* ---------- cold open cinemático ---------- */
+  .cold{
+    position:fixed;inset:0;z-index:3000;background:#0A0706;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
+    animation:coldOut .7s 1.5s ease forwards;pointer-events:none;
+  }
+  .cold .c1{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.5em;text-transform:uppercase;color:var(--bone-dim);
+    opacity:0;animation:coldIn .6s .1s ease forwards}
+  .cold .c2{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:clamp(22px,3.4vw,34px);color:var(--bone);
+    opacity:0;animation:coldIn .6s .35s ease forwards}
+  .cold .c3{width:52px;height:2px;background:linear-gradient(90deg,var(--gold),var(--red));transform:scaleX(0);
+    animation:coldBar .8s .55s var(--ease) forwards}
+  @keyframes coldIn{to{opacity:1}}
+  @keyframes coldBar{to{transform:scaleX(1)}}
+  @keyframes coldOut{to{opacity:0;visibility:hidden}}
+  @media (prefers-reduced-motion:reduce){.cold{display:none}}
+  .no-js .cold{display:none}
+
+  /* ---------- barra de progreso ---------- */
+  .progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:1500;background:rgba(243,235,221,.06)}
+  .progress .trail{height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--ember),var(--red-bright));transition:width .08s linear}
+
+  /* ---------- reveal ---------- */
+  .js .reveal{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+  .js .reveal.in{opacity:1;transform:none}
+  .js .stagger>*{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .js .stagger.in>*{opacity:1;transform:none}
+  .js .stagger.in>*:nth-child(1){transition-delay:.05s}
+  .js .stagger.in>*:nth-child(2){transition-delay:.15s}
+  .js .stagger.in>*:nth-child(3){transition-delay:.25s}
+  .js .stagger.in>*:nth-child(4){transition-delay:.35s}
+  .js .stagger.in>*:nth-child(5){transition-delay:.45s}
+  .js .stagger.in>*:nth-child(6){transition-delay:.55s}
+  @media (prefers-reduced-motion:reduce){
+    .js .reveal,.js .stagger>*{opacity:1;transform:none;transition:none}
+  }
+
+  /* ---------- etiquetas de sección con reglas animadas ---------- */
+  .tag{
+    display:inline-flex;align-items:center;gap:14px;
+    font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--bone-dim);
+    margin-bottom:22px;
+  }
+  .tag .n{color:var(--red-bright);letter-spacing:.15em}
+  .tag::before,.tag::after{content:"";width:40px;height:1px;background:var(--gold);opacity:.65;
+    transform:scaleX(0);transition:transform 1s .3s var(--ease)}
+  .tag::before{transform-origin:right}
+  .tag::after{transform-origin:left}
+  .in .tag::before,.in .tag::after{transform:scaleX(1)}
+  @media (prefers-reduced-motion:reduce){.tag::before,.tag::after{transform:scaleX(1)}}
+
+  /* ---------- identidad La Costeña: franja tricolor + sello ---------- */
+  .tricolor{height:7px;background:
+    linear-gradient(180deg,var(--gold) 0,var(--gold) 2.4px,var(--ember) 2.4px,var(--ember) 4.8px,var(--lc-wine) 4.8px,var(--lc-wine) 7px)}
+  .sabor{font-family:'Baloo 2',cursive;font-weight:700;color:var(--gold);transform:skew(-6deg) rotate(-2deg);display:inline-block}
+
+  /* ---------- top bar ---------- */
+  header.bar{
+    position:fixed;top:3px;left:0;right:0;z-index:1000;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding:13px clamp(20px,5vw,56px);
+    background:linear-gradient(180deg,rgba(18,13,11,.94),rgba(18,13,11,0));
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+    transition:background .4s ease,border-color .4s ease;
+    border-bottom:1px solid transparent;
+  }
+  header.bar.solid{background:rgba(14,10,9,.92);border-bottom:1px solid var(--line)}
+  .bar-l{display:flex;align-items:center;gap:14px;min-width:0}
+  .bar-logo{height:40px;width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
+  .bar-x{font-family:'Space Mono',monospace;font-size:12px;color:var(--bone-dim);letter-spacing:.1em;white-space:nowrap}
+  .bar-x b{color:var(--red-bright)}
+  .bar-links{display:flex;gap:26px;align-items:center}
+  .bar-links a{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--bone-dim);transition:color .25s}
+  .bar-links a:hover{color:var(--gold)}
+  .embargo{
+    display:inline-flex;align-items:center;gap:7px;
+    font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--gold);border:1px solid rgba(245,196,0,.35);border-radius:999px;padding:5px 11px;white-space:nowrap;
+  }
+  .embargo::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red-bright);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(240,26,44,.6)}70%{box-shadow:0 0 0 7px rgba(240,26,44,0)}100%{box-shadow:0 0 0 0 rgba(240,26,44,0)}}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;letter-spacing:.02em;
+    background:var(--red);color:#fff;border:none;border-radius:999px;
+    padding:12px 22px;cursor:pointer;transition:transform .25s var(--ease),background .25s ease,box-shadow .25s ease;
+    box-shadow:0 6px 26px rgba(213,16,35,.35);
+  }
+  .btn:hover{background:var(--red-bright);transform:translateY(-2px)}
+  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--bone);box-shadow:none}
+  .btn.ghost:hover{border-color:var(--gold);color:var(--gold);background:rgba(245,196,0,.06)}
+  @media (max-width:1060px){.bar-links{display:none}}
+  @media (max-width:720px){.bar-x,.embargo{display:none}}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+  .hero video{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;
+    background:#140F0D url(poster.jpg) center/cover no-repeat;
+    animation:heroZoom 14s var(--ease) forwards;
+  }
+  @keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+  @media (prefers-reduced-motion:reduce){.hero video{animation:none}}
+  .hero::after{
+    content:"";position:absolute;inset:0;z-index:1;
+    background:
+      radial-gradient(110% 80% at 82% 12%,rgba(213,16,35,.14),transparent 52%),
+      linear-gradient(96deg,rgba(18,13,11,.92) 0%,rgba(18,13,11,.74) 26%,rgba(18,13,11,.34) 52%,rgba(18,13,11,.06) 78%,rgba(18,13,11,0) 100%),
+      linear-gradient(180deg,rgba(18,13,11,.5) 0%,rgba(18,13,11,0) 22%,rgba(18,13,11,0) 50%,rgba(18,13,11,.82) 86%,var(--void) 100%);
+  }
+  .hero-scan{position:absolute;top:0;left:0;right:0;height:3px;z-index:3;
+    background:linear-gradient(90deg,transparent,var(--red-bright),var(--gold),transparent);
+    background-size:200% 100%;animation:scan 6s linear infinite}
+  @keyframes scan{0%{background-position:200% 0}100%{background-position:-200% 0}}
+  .hero-inner{position:relative;z-index:4;width:100%;padding-bottom:clamp(48px,8vh,100px);padding-top:130px}
+  .hero-eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:26px;flex-wrap:wrap;
+    opacity:0;animation:rise .9s 1.9s ease forwards}
+  .tick{height:1px;width:52px;background:var(--red-bright)}
+  .eyebrow{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--bone-dim)}
+  .hero h1{
+    font-size:clamp(42px,7.6vw,108px);font-weight:600;letter-spacing:-.025em;max-width:15ch;
+    text-shadow:0 2px 40px rgba(0,0,0,.55);
+  }
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero h1 .accent2{color:var(--red-bright)}
+  .hero h1 .hw{display:inline-block;opacity:0;transform:translateY(.65em);filter:blur(5px);
+    animation:wordIn 1s var(--ease) forwards;animation-delay:var(--d,2s)}
+  @keyframes wordIn{to{opacity:1;transform:none;filter:blur(0)}}
+  @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){
+    .hero h1 .hw,.hero-eyebrow,.hero-sub,.hero-meta{opacity:1!important;animation:none!important;transform:none!important;filter:none!important}
+  }
+  .no-js .hero h1 .hw,.no-js .hero-eyebrow,.no-js .hero-sub,.no-js .hero-meta{opacity:1;animation:none;transform:none;filter:none}
+  .hero-sabor{margin-top:18px;font-size:clamp(20px,2.6vw,30px);opacity:0;animation:rise .9s 3.2s ease forwards}
+  .hero-sabor .r{font-size:.45em;color:var(--gold);vertical-align:super;margin-left:4px}
+  .hero-sub{margin-top:26px;max-width:52ch;font-size:clamp(16px,1.9vw,20px);color:#EADFCB;line-height:1.55;
+    opacity:0;animation:rise 1s 3.1s ease forwards}
+  .hero-meta{margin-top:34px;display:flex;gap:26px;flex-wrap:wrap;align-items:center;
+    opacity:0;animation:rise 1s 3.35s ease forwards}
+  .hero-meta .chip{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.06em;color:var(--bone-dim);
+    border-left:2px solid var(--red);padding-left:12px}
+  .hero-meta .chip b{color:var(--bone);display:block;font-family:'Archivo';font-weight:700;font-size:15px;letter-spacing:0}
+  .scrollcue{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);z-index:4;
+    font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.3em;color:var(--bone-dim);text-transform:uppercase;
+    display:flex;flex-direction:column;align-items:center;gap:8px}
+  .scrollcue span{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);animation:cue 2s var(--ease) infinite}
+  @keyframes cue{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
+
+  /* ---------- marquee de expectativa ---------- */
+  .marq{background:var(--red);overflow:hidden;padding:15px 0;position:relative;z-index:5;
+    border-top:3px solid var(--gold);box-shadow:0 -6px 0 var(--ember),0 6px 0 var(--ember);border-bottom:3px solid var(--gold)}
+  .marq-track{display:flex;gap:0;white-space:nowrap;width:max-content;animation:marq 78s linear infinite}
+  .marq span{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:#fff;padding:0 26px;display:inline-flex;align-items:center;gap:26px}
+  .marq b{color:var(--gold);font-weight:400}
+  @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.marq-track{animation:none}}
+
+  /* ---------- galería producto real ---------- */
+  .proofshow{padding:16px 0}
+  .pfull{overflow:hidden}
+  .pfull img{width:100%;height:clamp(380px,74vh,740px);object-fit:cover;display:block;
+    transform:scale(1.07);transition:transform 2s var(--ease)}
+  .js .pfull.in img{transform:scale(1)}
+  .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+  .proof-grid img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--line);
+    box-shadow:0 26px 60px rgba(0,0,0,.4);transition:transform .5s var(--ease)}
+  .proof-grid img:hover{transform:scale(1.02)}
+  @media (max-width:720px){.proof-grid{grid-template-columns:1fr;gap:12px}.pfull img{height:52vh}}
+  @media (prefers-reduced-motion:reduce){.pfull img{transform:none;transition:none}}
+
+  /* ---------- secciones ---------- */
+  section{position:relative}
+  .sec{padding:clamp(64px,9vh,104px) 0}
+  .sec-head{max-width:780px;margin-bottom:56px}
+  .sec-head h2{font-size:clamp(30px,4.6vw,58px)}
+  .sec-head h2 em{font-style:italic;color:var(--red-bright)}
+  .sec-head p{margin-top:22px;color:var(--bone-dim);font-size:clamp(16px,1.7vw,19px);max-width:62ch}
+
+  /* reto */
+  .reto{background:linear-gradient(180deg,var(--void),var(--void-2));overflow:hidden}
+  .reto::before{content:"";position:absolute;top:0;right:-8%;width:62%;height:100%;
+    background:url(poster.jpg) center right/cover no-repeat;opacity:.10;
+    -webkit-mask-image:linear-gradient(270deg,#000 30%,transparent 95%);mask-image:linear-gradient(270deg,#000 30%,transparent 95%);
+    pointer-events:none}
+  .reto .wrap{position:relative}
+  .reto-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(30px,6vw,90px);align-items:start}
+  .reto-lead{font-family:'Fraunces',serif;font-size:clamp(25px,3.5vw,42px);line-height:1.16;font-weight:500}
+  .reto-lead .accent{font-style:italic}
+  .reto-list{display:flex;flex-direction:column}
+  .reto-item{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+  .reto-item:first-child{padding-top:0}
+  .reto-item:last-child{border-bottom:none}
+  .reto-item .k{font-family:'Space Mono',monospace;color:var(--gold);font-size:12px;letter-spacing:.05em;min-width:74px;padding-top:3px;text-transform:uppercase}
+  .reto-item .v{color:var(--bone-dim);font-size:15.5px}
+  .reto-item .v b{color:var(--bone);font-family:'Archivo';font-weight:700;display:block;margin-bottom:3px;font-size:16px}
+  @media (max-width:880px){.reto-grid{grid-template-columns:1fr;gap:44px}}
+
+  /* pipeline de producción */
+  .pipe{position:relative;margin-top:10px}
+  .pipe-rail{position:absolute;top:29px;left:0;right:0;height:2px;background:var(--line-soft);border-radius:2px;overflow:hidden}
+  .pipe-rail i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--gold),var(--ember) 50%,var(--red-bright));
+    transform:scaleX(0);transform-origin:left;transition:transform 1.8s .2s var(--ease)}
+  .in .pipe-rail i{transform:scaleX(1)}
+  @media (prefers-reduced-motion:reduce){.pipe-rail i{transform:scaleX(1)}}
+  .pipe-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:22px;position:relative}
+  .pipe-step{padding-top:0}
+  .pipe-node{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;margin-bottom:22px;position:relative;
+    background:linear-gradient(135deg,#2A1512,#170F0C);border:2px solid var(--gold);
+    outline:2px solid var(--ember);outline-offset:3px;
+    transition:transform .35s var(--ease),box-shadow .35s ease}
+  .pipe-node span{font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.06em;
+    background:linear-gradient(120deg,var(--gold),var(--red-bright));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .pipe-step:hover .pipe-node{transform:translateY(-4px);box-shadow:0 12px 34px rgba(245,130,32,.35)}
+  .pipe-step h4{font-family:'Archivo';font-weight:800;font-size:16px;margin-bottom:8px;letter-spacing:.01em}
+  .pipe-step p{font-size:13.5px;color:var(--bone-dim);line-height:1.55}
+  .pipe-out{margin-top:14px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.05em;color:var(--gold);
+    border-top:1px solid var(--line-soft);padding-top:12px}
+  @media (max-width:980px){
+    .pipe-rail{display:none}
+    .pipe-steps{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:560px){.pipe-steps{grid-template-columns:1fr}}
+  .method-quote{margin-top:clamp(48px,8vh,80px);text-align:center;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);
+    padding:clamp(36px,6vh,60px) 20px}
+  .method-quote p{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(22px,3.2vw,36px);line-height:1.25;max-width:24ch;margin:0 auto}
+  .method-quote em{font-style:italic;color:var(--red-bright)}
+  .method-quote span{display:block;margin-top:18px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--bone-dim)}
+
+  /* pantalla roja */
+  .reveal-band{position:relative;background:var(--red);overflow:hidden;isolation:isolate}
+  .reveal-band::before{content:"";position:absolute;inset:0;z-index:-1;
+    background:radial-gradient(85% 130% at 50% -10%,var(--red-bright),var(--red) 58%,#8F0A15 100%)}
+  .reveal-band::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;
+    background:radial-gradient(60% 90% at 50% 110%,rgba(0,0,0,.4),transparent 70%)}
+  .reveal-band .wrap{padding-top:clamp(84px,13vh,150px);padding-bottom:clamp(84px,13vh,150px);text-align:center;position:relative}
+  .reveal-band .rays{position:absolute;left:50%;top:0;width:160vmax;height:160vmax;transform:translate(-50%,-50%);z-index:-1;pointer-events:none;opacity:.14;
+    background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(255,210,0,.7) 0deg 5deg,transparent 5deg 16deg);
+    -webkit-mask-image:radial-gradient(closest-side,#000 0%,transparent 62%);mask-image:radial-gradient(closest-side,#000 0%,transparent 62%);
+    animation:rays 80s linear infinite}
+  @keyframes rays{to{transform:translate(-50%,-50%) rotate(360deg)}}
+  .reveal-logo{height:clamp(120px,15vw,180px);width:auto;margin:0 auto 30px;filter:drop-shadow(0 18px 40px rgba(0,0,0,.4));
+    animation:logofloat 5.5s ease-in-out infinite}
+  @keyframes logofloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .reveal-band .proxi{font-family:'Fraunces',serif;font-weight:300;font-style:italic;font-size:clamp(34px,6.6vw,84px);letter-spacing:-.02em;
+    background:linear-gradient(110deg,#fff 38%,var(--gold) 50%,#fff 62%);background-size:230% 100%;background-position:112% 0;
+    -webkit-background-clip:text;background-clip:text;color:transparent;animation:proxishine 5.5s ease-in-out infinite;padding:0 .12em}
+  @keyframes proxishine{0%,18%{background-position:112% 0}62%,100%{background-position:-12% 0}}
+  .reveal-band .date{margin-top:22px;font-family:'Space Mono',monospace;letter-spacing:.42em;text-transform:uppercase;color:rgba(255,255,255,.9);font-size:clamp(12px,1.6vw,15px)}
+  .reveal-band .cd{margin-top:30px;display:inline-flex;align-items:baseline;gap:14px;
+    border:1px solid rgba(255,210,0,.55);border-radius:999px;padding:12px 26px;animation:cdpulse 3.2s ease-in-out infinite}
+  @keyframes cdpulse{0%,100%{box-shadow:0 0 0 0 rgba(255,210,0,0)}50%{box-shadow:0 0 36px rgba(255,210,0,.28)}}
+  @media (prefers-reduced-motion:reduce){.reveal-band .rays,.reveal-logo,.reveal-band .proxi,.reveal-band .cd{animation:none}
+    .reveal-band .proxi{color:#fff;background:none}}
+  .reveal-band .cd b{font-family:'Fraunces',serif;font-size:clamp(26px,3.4vw,40px);font-weight:600;color:#fff;line-height:1}
+  .reveal-band .cd span{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+  .reveal-band .foot{margin-top:28px;color:rgba(255,255,255,.75);font-size:13px;font-family:'Space Mono',monospace;letter-spacing:.14em}
+
+  /* entregables */
+  .deliv{background:linear-gradient(180deg,var(--void-2),var(--void));overflow:hidden}
+  .deliv::before{content:"";position:absolute;top:-20%;left:-15%;width:55%;height:70%;pointer-events:none;
+    background:radial-gradient(circle,rgba(245,130,32,.10),transparent 65%)}
+  .deliv::after{content:"";position:absolute;bottom:-25%;right:-12%;width:50%;height:70%;pointer-events:none;
+    background:radial-gradient(circle,rgba(255,210,0,.07),transparent 65%)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{
+    background:linear-gradient(160deg,rgba(74,28,28,.35),rgba(26,19,15,.5));
+    border:1px solid var(--line);border-radius:18px;padding:30px 26px 28px;
+    transition:transform .4s var(--ease),border-color .4s ease,box-shadow .4s ease;position:relative;overflow:hidden;
+  }
+  .card::before{content:"";position:absolute;top:0;left:0;height:5px;width:0;transition:width .5s var(--ease);
+    background:linear-gradient(180deg,var(--gold) 0,var(--gold) 1.7px,var(--ember) 1.7px,var(--ember) 3.4px,var(--red) 3.4px)}
+  .card:hover{transform:translateY(-6px);border-color:rgba(245,196,0,.4);box-shadow:0 20px 50px rgba(0,0,0,.45)}
+  .card:hover::before{width:100%}
+  .card .idx{font-family:'Space Mono',monospace;font-size:12px;color:var(--red-bright);letter-spacing:.1em;text-transform:uppercase}
+  .card h3{font-size:26px;margin:16px 0 6px}
+  .card .dur{font-family:'Baloo 2',cursive;font-weight:700;color:var(--gold);font-size:19px;margin-bottom:14px;transform:skew(-4deg);display:inline-block}
+  .card p{font-size:14.5px;color:var(--bone-dim);line-height:1.55;margin-bottom:18px}
+  .spec{display:flex;flex-wrap:wrap;gap:7px}
+  .spec span{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.04em;color:var(--bone-dim);
+    border:1px solid var(--line);border-radius:6px;padding:4px 9px}
+  .card.wide{grid-column:span 3;display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center}
+  .card.wide .big{font-family:'Fraunces',serif;font-size:clamp(44px,7vw,92px);font-weight:600;color:var(--bone);line-height:.9}
+  @media (max-width:880px){.cards{grid-template-columns:1fr 1fr}.card.wide{grid-column:span 2}}
+  @media (max-width:560px){.cards{grid-template-columns:1fr}.card.wide{grid-column:span 1;grid-template-columns:1fr}}
+
+  /* metodología */
+  .method{background:var(--void)}
+
+  /* portafolio */
+  .port{background:linear-gradient(180deg,var(--void),var(--wine-deep))}
+  .port-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(28px,5vw,64px);align-items:center}
+  .port h2{font-size:clamp(28px,4.4vw,52px)}
+  .port h2 em{font-style:italic;color:var(--red-bright)}
+  .port p{color:var(--bone-dim);margin:22px 0 30px;max-width:46ch}
+  .port .actions{display:flex;gap:14px;flex-wrap:wrap}
+  .port-embed{position:relative;display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);
+    box-shadow:0 30px 70px rgba(0,0,0,.5);aspect-ratio:16/9;background:#0d0a09;
+    transition:transform .4s var(--ease),border-color .4s ease}
+  .port-embed img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease)}
+  .port-embed:hover{transform:translateY(-4px);border-color:rgba(245,196,0,.45)}
+  .port-embed:hover img{transform:scale(1.03)}
+  .port-embed .port-open{position:absolute;left:0;right:0;bottom:0;padding:16px 18px;display:flex;justify-content:space-between;align-items:flex-end;
+    font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.06em;color:#fff;
+    background:linear-gradient(0deg,rgba(18,13,11,.9),rgba(18,13,11,0));text-transform:uppercase}
+  .port-embed .port-open .pill{background:var(--red);padding:7px 13px;border-radius:999px;font-weight:700;transition:background .3s ease}
+  .port-embed:hover .port-open .pill{background:var(--red-bright)}
+  @media (max-width:880px){.port-grid{grid-template-columns:1fr;gap:36px}.port .order-1{order:-1}}
+
+  /* inversión */
+  .invest{background:var(--wine-deep);position:relative;overflow:hidden}
+  .invest::before{content:"";position:absolute;top:-40%;right:-10%;width:60%;height:120%;
+    background:radial-gradient(circle,rgba(213,16,35,.18),transparent 65%);pointer-events:none}
+  .invest-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,6vw,80px);align-items:center;position:relative}
+  .invest-includes{list-style:none;display:flex;flex-direction:column}
+  .invest-includes li{display:grid;grid-template-columns:12px 1fr;column-gap:16px;padding:15px 0;border-bottom:1px solid var(--line);align-items:start}
+  .invest-includes li::before{content:"";flex:none;width:12px;height:12px;margin-top:7px;border-radius:50%;
+    background:radial-gradient(circle,var(--lc-wine) 0 32%,var(--gold) 36% 62%,var(--ember) 66% 100%)}
+  .invest-includes li b{display:block;color:var(--bone);font-weight:600}
+  .invest-includes li span{display:block;color:var(--bone-dim);margin-top:3px;font-size:14.5px}
+  .price-card{
+    position:relative;border-radius:22px;padding:2px;overflow:hidden;
+    box-shadow:0 30px 80px rgba(0,0,0,.55);
+  }
+  .price-card::before{content:"";position:absolute;inset:-120%;
+    background:conic-gradient(from 0deg,transparent 0 60deg,rgba(245,196,0,.7) 90deg,rgba(240,26,44,.8) 130deg,transparent 170deg 360deg);
+    animation:spin 6s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){.price-card::before{animation:none}}
+  .price-in{
+    position:relative;border-radius:20px;padding:46px 36px 40px;text-align:center;overflow:hidden;
+    background:linear-gradient(165deg,#1B1210 0%,#33150F 100%);
+    border:1px solid rgba(245,196,0,.18);
+  }
+  .price-in .plabel{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--bone-dim)}
+  .price-in .amount{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(58px,11vw,96px);line-height:1;margin:14px 0 4px;
+    background:linear-gradient(120deg,var(--gold),var(--ember) 60%,var(--red-bright));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .price-in .cur{font-family:'Space Mono',monospace;color:var(--bone-dim);letter-spacing:.3em;font-size:14px}
+  .price-in .divide{height:1px;background:var(--line);margin:26px 0}
+  .price-in .rows{display:flex;flex-direction:column;gap:12px;text-align:left}
+  .price-in .rows div{display:flex;justify-content:space-between;font-size:14px}
+  .price-in .rows span{color:var(--bone-dim);font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.05em;text-transform:uppercase}
+  .price-in .rows b{color:var(--bone);font-weight:700}
+  .price-in .note{margin-top:22px;font-size:12px;color:var(--bone-dim);line-height:1.5;font-style:italic}
+  .price-in .btn{margin-top:26px;width:100%;justify-content:center}
+  @media (max-width:880px){.invest-grid{grid-template-columns:1fr;gap:40px}}
+
+
+  /* footer */
+  footer.legal{background:var(--void);border-top:1px solid var(--line);padding:60px 0 44px}
+  .legal-grid{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start}
+  .legal .brand{font-family:'Fraunces',serif;font-size:26px}
+  .legal .sig{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--bone-dim);text-transform:uppercase;margin-top:10px}
+  .legal .data{font-family:'Space Mono',monospace;font-size:12.5px;color:var(--bone-dim);line-height:1.9;text-align:right}
+  .legal .data b{color:var(--bone)}
+  @media (max-width:640px){.legal-grid{grid-template-columns:1fr}.legal .data{text-align:left}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+
+<!-- COLD OPEN -->
+<div class="cold" aria-hidden="true">
+  <div class="c1">La Costeña × ARDE · Confidencial</div>
+  <div class="c2">Aquí nadie se raja.</div>
+  <div class="c3"></div>
+</div>
+
+<!-- PROGRESO -->
+<div class="progress" aria-hidden="true"><div class="trail" id="trail"></div></div>
+
+<!-- TOP BAR -->
+<header class="bar" id="bar">
+  <div class="bar-l">
+    <img class="bar-logo" src="logo_lacostena.webp" alt="La Costeña" />
+    <span class="bar-x">×&nbsp; <b>ARDE</b></span>
+    <span class="embargo">Confidencial · Pre-lanzamiento</span>
+  </div>
+  <nav class="bar-links" aria-label="Secciones">
+    <a href="#reto">El reto</a>
+    <a href="#entregables">Entregables</a>
+    <a href="#portafolio">Portafolio</a>
+    <a href="#inversion">Inversión</a>
+  </nav>
+  <a class="btn" href="#inversion">Ver propuesta</a>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-scan"></div>
+  <video autoplay muted loop playsinline preload="auto" poster="poster.jpg">
+    <source src="hero-video-web.mp4" type="video/mp4" />
+    <source src="hero-video.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-inner wrap">
+    <div class="hero-eyebrow">
+      <span class="tick"></span>
+      <span class="eyebrow">Propuesta · Teaser de relanzamiento · Categoría Frijoles</span>
+    </div>
+    <h1>
+      <span class="hw" style="--d:2.0s">Algo</span>
+      <em class="hw" style="--d:2.15s">grande</em>
+      <span class="hw" style="--d:2.3s">está</span>
+      <span class="hw" style="--d:2.4s">por</span>
+      <span class="hw" style="--d:2.5s">llegar</span>
+      <span class="hw" style="--d:2.6s">a</span>
+      <span class="hw" style="--d:2.65s">la</span>
+      <span class="hw" style="--d:2.75s">categoría</span>
+      <span class="hw" style="--d:2.9s">de</span>
+      <span class="hw accent2" style="--d:3.0s">frijoles.</span>
+    </h1>
+    <div class="hero-sabor"><span class="sabor">¡por sabor!</span><span class="r">®</span></div>
+    <p class="hero-sub">Una pieza teaser para clientes y decisores de compra. Genera expectativa, curiosidad y urgencia sin revelar el qué. Solo la certeza de que hay que estar atentos antes que el resto del mercado.</p>
+    <div class="hero-meta">
+      <div class="chip">Cliente<b>La Costeña</b></div>
+      <div class="chip">Revelación<b>Octubre 2026</b></div>
+      <div class="chip">Entregables<b>5 piezas · 1 ecosistema</b></div>
+      <div class="chip">Producción<b>ARDE · Human-Directed AI</b></div>
+    </div>
+  </div>
+  <div class="scrollcue">Desliza<span></span></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marq" aria-hidden="true">
+  <div class="marq-track">
+    <span>Algo grande se acerca <b>◆</b> Octubre 2026 <b>◆</b> Categoría Frijoles <b>◆</b> Confidencial <b>◆</b></span>
+    <span>Algo grande se acerca <b>◆</b> Octubre 2026 <b>◆</b> Categoría Frijoles <b>◆</b> Confidencial <b>◆</b></span>
+    <span>Algo grande se acerca <b>◆</b> Octubre 2026 <b>◆</b> Categoría Frijoles <b>◆</b> Confidencial <b>◆</b></span>
+    <span>Algo grande se acerca <b>◆</b> Octubre 2026 <b>◆</b> Categoría Frijoles <b>◆</b> Confidencial <b>◆</b></span>
+    <span>Algo grande se acerca <b>◆</b> Octubre 2026 <b>◆</b> Categoría Frijoles <b>◆</b> Confidencial <b>◆</b></span>
+    <span>Algo grande se acerca <b>◆</b> Octubre 2026 <b>◆</b> Categoría Frijoles <b>◆</b> Confidencial <b>◆</b></span>
+  </div>
+</div>
+
+<!-- RETO -->
+<section class="sec reto" id="reto">
+  <div class="wrap">
+    <div class="reto-grid">
+      <div class="reveal">
+        <span class="tag"><span class="n">01</span> El reto</span>
+        <p class="reto-lead">La categoría de frijoles se ha movido poco en años. Cuando una marca del tamaño de La Costeña decide moverla, <span class="accent">el mercado presta atención.</span></p>
+        <p style="margin-top:26px;color:var(--bone-dim);max-width:48ch">El teaser prepara el terreno para que el equipo comercial presente después el plan de lanzamiento. Abre puertas, genera reuniones y facilita conversaciones con clientes clave.</p>
+      </div>
+      <div class="reto-list reveal stagger">
+        <div class="reto-item"><div class="k">Audiencia</div><div class="v"><b>Decisores de compra</b>Compradores de autoservicio y mayoreo, directores comerciales, gerentes de categoría y responsables de abasto.</div></div>
+        <div class="reto-item"><div class="k">Objetivo</div><div class="v"><b>Sentido de urgencia</b>Que el comprador concluya: “viene algo grande para la categoría y necesito conocerlo antes que mis competidores”.</div></div>
+        <div class="reto-item"><div class="k">Tono</div><div class="v"><b>Corporativo y disruptivo</b>Poderoso, ambicioso, estratégico y moderno. A distancia deliberada de la comunicación tradicional de alimentos.</div></div>
+        <div class="reto-item"><div class="k">Regla</div><div class="v"><b>Sin revelar</b>Sin producto final, empaques, fórmulas, gramajes ni claims. Solo expectativa.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PANTALLA ROJA -->
+<section class="reveal-band" aria-label="Cierre del teaser">
+  <div class="wrap reveal">
+    <div class="rays" aria-hidden="true"></div>
+    <img class="reveal-logo" src="logo_lacostena.webp" alt="La Costeña" />
+    <div class="proxi">Próximamente</div>
+    <div class="date">Octubre 2026</div>
+    <div class="cd" id="countdown" hidden><b id="cd-days">—</b><span>días para la revelación</span></div>
+    <div class="foot">Aquí nadie se raja.</div>
+    <div style="margin-top:14px"><span class="sabor" style="font-size:clamp(18px,2.4vw,26px);color:#fff">¡por sabor!</span><span style="font-size:11px;color:rgba(255,255,255,.8);vertical-align:super">®</span></div>
+  </div>
+</section>
+
+<!-- ENTREGABLES -->
+<section class="sec deliv" id="entregables">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag"><span class="n">02</span> Qué entregamos</span>
+      <h2>Un ecosistema teaser para <em>cada punto de contacto.</em></h2>
+      <p>Un máster cinematográfico y sus adaptaciones dirigidas: reframing inteligente por formato, no recortes automáticos, para llegar a cada canal del ciclo comercial.</p>
+    </div>
+    <div class="cards reveal stagger">
+      <div class="card"><div class="idx">A · Máster</div><h3>Teaser principal</h3><div class="dur">45 segundos</div><p>Pieza cinematográfica corporativa con concepto, motion design, diseño sonoro y música. El núcleo del que nace todo el ecosistema.</p><div class="spec"><span>16:9</span><span>1080p</span><span>Master</span></div></div>
+      <div class="card"><div class="idx">B · Reducción</div><h3>Corte medio</h3><div class="dur">30 segundos</div><p>Reedición dirigida del máster que conserva el arco y el remate para pauta y presentaciones más ágiles.</p><div class="spec"><span>16:9</span><span>1080p</span></div></div>
+      <div class="card"><div class="idx">C · Reducción</div><h3>Corte corto</h3><div class="dur">15 segundos</div><p>Versión de máxima concentración: tensión y cierre en la mínima duración, ideal para impacto rápido.</p><div class="spec"><span>16:9</span><span>1080p</span></div></div>
+      <div class="card"><div class="idx">D · Móvil</div><h3>Versión WhatsApp</h3><div class="dur">9:16 · 30s + 15s</div><p>Reframing vertical dirigido para envío directo a la fuerza de ventas y clientes clave por WhatsApp.</p><div class="spec"><span>9:16</span><span>1080p</span><span>Vertical</span></div></div>
+      <div class="card"><div class="idx">E · Evento</div><h3>Pantallas comerciales</h3><div class="dur">Gran formato</div><p>Loop en 16:9 más versión LED horizontal, listos para proyectar en el evento comercial de presentación.</p><div class="spec"><span>16:9</span><span>LED horizontal</span><span>Loop</span></div></div>
+      <div class="card wide"><div class="big" data-count="7">7</div><div><h3 style="margin-top:0">Videos finales entregados</h3><p style="margin-bottom:0">1 máster 45 s + cortes 30 s y 15 s en 16:9 + 2 verticales 9:16 (30 s y 15 s) + loop de pantallas y versión LED horizontal. En total, 3 formatos: 16:9, 9:16 y gran formato LED.</p></div></div>
+      <div class="card wide"><div class="big" data-count="2">2</div><div><h3 style="margin-top:0">Rondas de revisión incluidas</h3><p style="margin-bottom:0">Curaduría humana pieza por pieza. Cada entregable se dirige, se revisa y se ajusta hasta cumplir el estándar antes de la entrega organizada.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- METODOLOGÍA -->
+<section class="sec method">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag"><span class="n">03</span> Cómo lo producimos</span>
+      <h2>Human-Directed <em>AI.</em></h2>
+      <p>La IA es el motor; la dirección es humana. Cinco fases, una línea de producción cinematográfica donde cada pieza pasa por curaduría antes de salir.</p>
+    </div>
+    <div class="pipe reveal">
+      <div class="pipe-rail" aria-hidden="true"><i></i></div>
+      <div class="pipe-steps stagger">
+        <div class="pipe-step">
+          <div class="pipe-node"><span>01</span></div>
+          <h4>Concepto &amp; narrativa</h4>
+          <p>Territorio, guion y storyboard del arco de expectativa.</p>
+          <div class="pipe-out">→ Storyboard aprobado</div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-node"><span>02</span></div>
+          <h4>Dirección cinematográfica</h4>
+          <p>Planos, iluminación, color y prompt engineering alineados a la identidad.</p>
+          <div class="pipe-out">→ Look &amp; feel definido</div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-node"><span>03</span></div>
+          <h4>Producción IA dirigida</h4>
+          <p>Generación del máster y adaptaciones con los modelos líderes del mercado.</p>
+          <div class="pipe-out">→ Máster 45 s</div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-node"><span>04</span></div>
+          <h4>Curaduría humana</h4>
+          <p>Revisión pieza por pieza, diseño sonoro, música y control de calidad.</p>
+          <div class="pipe-out">→ 2 rondas de revisión</div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-node"><span>05</span></div>
+          <h4>Entrega organizada</h4>
+          <p>Máster y adaptaciones por formato, carpetas y naming estandarizado.</p>
+          <div class="pipe-out">→ Ecosistema completo</div>
+        </div>
+      </div>
+    </div>
+    <div class="method-quote reveal">
+      <p>“No se trata de hacerlo más barato. <em>Se trata de hacerlo más inteligente.</em>”</p>
+      <span>ARDE · Human-Directed AI Production</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRUEBA CON PRODUCTO REAL -->
+<section class="proofshow" aria-label="Imágenes del producto">
+  <div class="wrap">
+    <div class="proof-grid reveal stagger">
+      <img src="demo_1.jpg" alt="Frijoles Negros Molidos La Costeña · bodegón terracota" loading="lazy">
+      <img src="demo_2.jpg" alt="Frijoles Negros Molidos La Costeña · flat lay naranja" loading="lazy">
+      <img src="demo_3.jpg" alt="Frijoles Negros Molidos La Costeña · flat lay talavera" loading="lazy">
+      <img src="demo_4.jpg" alt="Frijoles Negros Molidos La Costeña · cocina con tacos" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- PORTAFOLIO -->
+<section class="sec port" id="portafolio">
+  <div class="wrap">
+    <div class="port-grid">
+      <div class="reveal">
+        <span class="tag"><span class="n">04</span> Quiénes lo hacemos</span>
+        <h2>Nuestro <em>portafolio.</em></h2>
+        <p>Somos un estudio creativo dirigido por humanos y potenciado por IA. La IA es el motor; nosotros somos los pilotos. Contamos historias imposibles para marcas como Newell, Oster, Coleman y BodyArmor, con el nivel de una producción cinematográfica.</p>
+        <div class="actions">
+          <a class="btn" href="https://ardeagency.github.io/arde-portafolio/" target="_blank" rel="noopener">Ver portafolio completo ↗</a>
+        </div>
+      </div>
+      <a class="port-embed order-1 reveal" href="https://ardeagency.github.io/arde-portafolio/" target="_blank" rel="noopener" aria-label="Abrir el portafolio completo de ARDE en nueva pestaña">
+        <img src="portfolio-cover.jpg" alt="Portafolio ARDE Agency 2026" />
+        <span class="port-open"><span>Portafolio 2026</span><span class="pill">Ver completo ↗</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INVERSIÓN -->
+<section class="sec invest" id="inversion">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:44px">
+      <span class="tag"><span class="n">05</span> Inversión</span>
+      <h2>Un paquete. <em>Un valor.</em></h2>
+    </div>
+    <div class="invest-grid">
+      <ul class="invest-includes reveal stagger">
+        <li><div><b>Concepto creativo</b><span>Narrativa, guion y storyboard</span></div></li>
+        <li><div><b>Dirección de arte</b><span>Alineada a la identidad visual corporativa de La Costeña</span></div></li>
+        <li><div><b>Teaser máster 45 s</b><span>16:9 · 1080p · motion + diseño sonoro + música</span></div></li>
+        <li><div><b>Reducciones 30 s y 15 s</b><span>16:9 · reedición dirigida</span></div></li>
+        <li><div><b>Versión WhatsApp 9:16</b><span>30 s + 15 s · reframing dirigido</span></div></li>
+        <li><div><b>Pack pantallas evento comercial</b><span>Loop gran formato 16:9 + versión LED horizontal</span></div></li>
+        <li><div><b>2 rondas de revisión</b><span>Entrega organizada vía WeTransfer / Google Drive</span></div></li>
+        <li><div><b>Total: 7 videos finales</b><span>3 formatos · 16:9, 9:16 y gran formato LED</span></div></li>
+      </ul>
+      <div class="price-card reveal">
+        <div class="price-in">
+          <div class="tricolor" style="position:absolute;top:0;left:0;right:0;border-radius:20px 20px 0 0"></div>
+          <div class="plabel">Total del proyecto</div>
+          <div class="amount"><span id="count">$6,300</span></div>
+          <div class="cur">USD</div>
+          <div class="divide"></div>
+          <div class="rows">
+            <div><span>Entregables</span><b>7 videos · 3 formatos</b></div>
+            <div><span>Plazo</span><b>2 a 3 semanas</b></div>
+            <div><span>Revisiones</span><b>2 rondas incluidas</b></div>
+          </div>
+          <a class="btn" href="mailto:contact@ardeagency.com?subject=Teaser%20Relanzamiento%20Frijoles%20La%20Coste%C3%B1a">Aprobar propuesta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="tricolor" aria-hidden="true"></div>
+<footer class="legal">
+  <div class="wrap">
+    <div class="legal-grid">
+      <div>
+        <div class="brand"><img src="arde_logo.png" alt="arde" style="height:clamp(34px,4vw,48px);display:block"></div>
+        <p style="margin-top:20px;color:var(--bone-dim);max-width:34ch;font-size:14px">AI Craft. Human Vision. El cliente no compra AI. Compra seguridad creativa.</p>
+      </div>
+      <div class="data">
+        <b>ARDE AGENCY S.A.S</b><br>
+        NIT. 901856077-9<br>
+        Juan Camilo Murillo M. · Rep. Legal<br>
+        +57 321 830 0088<br>
+        contact@ardeagency.com<br>
+        www.ardeagency.com<br>
+        Medellín / Llanogrande, Colombia
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // barra sólida + progreso
+  var bar=document.getElementById('bar'),trail=document.getElementById('trail');
+  addEventListener('scroll',function(){
+    bar.classList.toggle('solid',scrollY>40);
+    var h=document.documentElement;
+    var p=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
+    trail.style.width=p+'%';
+  },{passive:true});
+
+  // reveal on scroll
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(!reduce && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);} });
+    },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal,.stagger').forEach(function(el){io.observe(el)});
+  }else{
+    document.querySelectorAll('.reveal,.stagger').forEach(function(el){el.classList.add('in')});
+  }
+
+  // count-up precio
+  var priceEl=document.getElementById('count');
+  var done=false;
+  function countUp(){
+    if(done)return;done=true;
+    var target=6300,start=null,dur=1400;
+    function fmt(n){return '$'+Math.round(n).toLocaleString('en-US')}
+    function tick(t){ if(!start)start=t; var p=Math.min((t-start)/dur,1);
+      var e=1-Math.pow(1-p,3);
+      priceEl.textContent=fmt(target*e);
+      if(p<1)requestAnimationFrame(tick); else priceEl.textContent='$6,300';
+    }
+    requestAnimationFrame(tick);
+  }
+  if(!reduce && 'IntersectionObserver' in window){
+    var pio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)countUp()})},{threshold:.5});
+    pio.observe(priceEl);
+  }
+
+  // countdown a la revelación (1 oct 2026, CDMX)
+  try{
+    var target=new Date('2026-10-01T00:00:00-06:00');
+    var days=Math.ceil((target-Date.now())/864e5);
+    if(days>0){
+      document.getElementById('cd-days').textContent=days;
+      document.getElementById('countdown').hidden=false;
+    }
+  }catch(e){}
+
+  /* ARDE tracking unificado v2: filtro de bots + gate humano + apertura + destinatario + visitas + heatmap + clics (ntfy.sh) */
+(function(){
+  try{
+    var ARDE_SELF=false;/*self*/try{fetch('https://ipapi.co/json/').then(function(r){return r.json();}).then(function(d){if(/rionegro|llanogrande/i.test((d.city||'')+' '+(d.region||''))&&!/[?&]test=1/i.test(location.search))ARDE_SELF=true;}).catch(function(){});}catch(e){}var TOPIC='https://ntfy.sh/arde-cotizaciones-7k2pqz9x';
+    var LABEL='La Costeña Teaser Frijoles', KEY='lacostena';
+    var ua=navigator.userAgent||'';
+    var isBot = navigator.webdriver===true
+      || /bot\b|crawl|spider|slurp|bingbot|yandex|baidu|duckduckbot|headless|phantom|puppeteer|playwright|python-|curl\/|wget|libwww|httpclient|okhttp|go-http|java\/|facebookexternalhit|embedly|telegrambot|whatsapp|discordbot|slackbot|twitterbot|linkedinbot|googlebot|applebot|lighthouse|pingdom|uptimerobot|datadog|semrush|ahrefs|mj12bot|dotbot|petalbot|bytespider|gptbot|ccbot|claudebot|amazonbot|zgrab|censys|shodan|expanse|netcraft|httpx|nmap|masscan|paloalto|internetmeasurement/i.test(ua)||(function(){var m=ua.match(/Chrome\/(\d+)/);return !!m&&+m[1]<90;})();
+    if(isBot) return;
+    function qp(n){try{var m=location.search.match(new RegExp('[?&]'+n+'=([^&]+)'));return m?decodeURIComponent(m[1].replace(/\+/g,' ')):'';}catch(e){return '';}}
+    var who=qp('to')||qp('p');
+    var whoLine=who?('\nDestinatario: '+who):'';
+    function post(title,tags,body){if(ARDE_SELF)return; try{ fetch(TOPIC,{method:'POST',keepalive:true,headers:{'Title':title,'Tags':tags},body:body}); }catch(e){ try{navigator.sendBeacon(TOPIC,body);}catch(e2){} } }
+    var interacted=false;
+    ['scroll','mousemove','touchstart','keydown','pointerdown'].forEach(function(ev){window.addEventListener(ev,function(){interacted=true;},{passive:true});});
+    var vis=0,lastV=Date.now();
+    function vtick(){ if(document.visibilityState==='visible')vis+=Date.now()-lastV; lastV=Date.now(); }
+    setInterval(vtick,1000);
+    var maxPct=0,deepest='';
+    function onScroll(){ var h=document.documentElement; var sc=h.scrollTop||document.body.scrollTop||0; var p=Math.round((sc+h.clientHeight)/h.scrollHeight*100); if(p>maxPct)maxPct=Math.min(100,p); }
+    window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+    var eb=[].slice.call(document.querySelectorAll('.eyebrow,.board-tag'));
+    if(eb.length && 'IntersectionObserver' in window){
+      var io2=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ deepest=e.target.textContent.trim().replace(/\s+/g,' '); }});},{threshold:.4});
+      eb.forEach(function(el){io2.observe(el);});
+    }
+    var openSent=false;
+    function maybeOpen(){
+      if(openSent)return; vtick();
+      if((interacted && vis>=2500) || vis>=9000){
+        openSent=true;
+        var visits=0;
+        try{ visits=parseInt(localStorage.getItem('arde_v_'+KEY)||'0',10)||0;
+          if(!sessionStorage.getItem('arde_s_'+KEY)){ sessionStorage.setItem('arde_s_'+KEY,'1'); visits+=1; localStorage.setItem('arde_v_'+KEY,String(visits)); }
+        }catch(e){}
+        var rep=visits>=2?(' (visita #'+visits+', repetida)'):'';
+        function openPing(loc){ post('ARDE - Abrieron: '+LABEL,(visits>=2?'fire,eyes':'eyes'),
+          'Abrieron: '+LABEL+rep+whoLine+'\n'+loc+'\nLlego desde: '+(document.referrer||'enlace directo')+'\nDispositivo: '+ua.slice(0,90)); }
+        fetch('https://ipapi.co/json/').then(function(r){return r.json();}).then(function(d){if(/rionegro|llanogrande/i.test((d.city||'')+' '+(d.region||''))&&!/[?&]test=1/i.test(location.search))ARDE_SELF=true;
+          openPing('Ubicacion: '+(d.city||'?')+', '+(d.region||'')+' '+(d.country_name||'?')+' (IP '+(d.ip||'?')+')');
+        }).catch(function(){ openPing('Ubicacion: no disponible'); });
+      }
+    }
+    var gi=setInterval(function(){ maybeOpen(); if(openSent)clearInterval(gi); },1000);
+    var sentH=false;
+    function fmt(ms){var s=Math.round(ms/1000),m=Math.floor(s/60);return m+'m '+(s%60)+'s';}
+    function sendH(){ if(sentH)return; sentH=true; vtick(); if(!openSent)return;
+      post('ARDE - Lectura: '+LABEL,'book,bar_chart','Leyo: '+LABEL+whoLine+'\nProfundidad: '+maxPct+'%'+(maxPct>=90?' (llego al final)':'')+'\nSeccion mas avanzada: '+(deepest||'inicio')+'\nTiempo activo: '+fmt(vis)); }
+    document.addEventListener('visibilitychange',function(){ if(document.visibilityState==='hidden')sendH(); });
+    window.addEventListener('pagehide',sendH);
+    document.addEventListener('click',function(ev){
+      var a=ev.target.closest&&ev.target.closest('a'); if(!a)return;
+      var href=a.getAttribute('href')||''; var isCTA=a.classList.contains('btn')||a.classList.contains('pitch-card')||href.indexOf('wa.me')>-1||href.indexOf('mailto:')>-1||href.indexOf('.pdf')>-1;
+      if(!isCTA)return;
+      var t=(a.textContent||'').trim().replace(/\s+/g,' ').slice(0,40);
+      post('ARDE - Clic CTA: '+LABEL,'point_up,white_check_mark','Hizo clic en "'+t+'"\nPropuesta: '+LABEL+whoLine);
+    },true);
+  }catch(e){}
+})();
+
+</script>
+</body>
+</html>
